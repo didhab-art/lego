@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>LEGO Figur Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🧱 LEGO Figur Finder</h1>
+  <p>Finn navn og verdi på dine LEGO figurer</p>
+</header>
+
+<nav>
+  <button onclick="showSection('home')">Hjem</button>
+  <button onclick="showSection('search')">Finn figur</button>
+  <button onclick="showSection('value')">Verdi</button>
+</nav>
+
+<section id="home" class="active">
+  <h2>Velkommen</h2>
+  <p>Denne siden hjelper deg å identifisere LEGO minifigurer og se hva de er verdt.</p>
+</section>
+
+<section id="search">
+  <h2>Finn din figur 🔍</h2>
+  <input type="text" id="searchInput" placeholder="Skriv f.eks: ninja, yoda...">
+  <button onclick="searchFigure()">Søk</button>
+  <div id="results"></div>
+</section>
+
+<section id="value">
+  <h2>Verdi 💰</h2>
+  <p>Generelle priser:</p>
+  <ul>
+    <li>Vanlige figurer: 20–60 kr</li>
+    <li>Sjeldne: 80–200 kr</li>
+    <li>Spesielle: 200+ kr</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Laget av deg 🚀</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
