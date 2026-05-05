@@ -9,26 +9,27 @@
 
 <body>
 
-<header class="topbar">
+<header class="hero">
   <h1>🧱 LEGO Collection</h1>
+  <p>Utforsk figurer med moderne design</p>
 
-  <div class="controls">
-    <input id="search" placeholder="Søk figurer..." oninput="render()">
-    <button onclick="toggleTheme()">🌙</button>
+  <div class="search">
+    <input id="searchInput" placeholder="Søk LEGO figurer...">
+    <button onclick="search()">🔍 Søk</button>
   </div>
 </header>
 
+<nav>
+  <button onclick="filter('all')">🔥 Alle</button>
+  <button onclick="filter('starwars')">⭐ Star Wars</button>
+  <button onclick="filter('ninja')">🥷 Ninja</button>
+</nav>
+
 <main id="grid"></main>
 
-<!-- modal -->
-<div id="modal" class="modal" onclick="closeModal()">
-  <div class="modal-content" onclick="event.stopPropagation()">
-    <img id="modalImg">
-    <h2 id="modalName"></h2>
-    <p id="modalValue"></p>
-    <button onclick="toggleFavorite(currentId)">⭐ Favoritt</button>
-  </div>
-</div>
+<footer>
+  <p>🧱 LEGO Collection • laget med HTML/CSS/JS</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
